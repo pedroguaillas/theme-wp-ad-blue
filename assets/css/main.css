@@ -494,7 +494,7 @@ ul  { list-style: none; }
    INFÓRMATE
    ============================================================ */
 .informate {
-  padding: 100px 0;
+  padding: 80px 0;
   background: var(--white);
 }
 
@@ -901,5 +901,6 @@ ul  { list-style: none; }
   .section-pad { padding: 56px 0; }
   .about { padding: 56px 0; }
   .services { padding: 56px 0; }
+  .informate { padding: 56px 0; }
   .mission { padding: 72px 0; }
 }

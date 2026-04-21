@@ -189,7 +189,7 @@ function adcont_svc_icon( $key ) {
       <!-- Text -->
       <div class="about-body" data-anim="fade-right">
         <?php
-        $default_text = "En AD Cont brindamos asesoría contable y tributaria con enfoque estratégico.\n\nNo solo cumplimos con las obligaciones fiscales, diseñamos planes personalizados que permiten <strong>optimizar la carga tributaria</strong> dentro del marco legal ecuatoriano.\n\nNuestra especialidad es la <strong>planificación tributaria preventiva</strong>, ayudando a empresas, profesionales independientes y personas naturales a anticiparse a sus impuestos y tomar decisiones inteligentes.\n\nTrabajamos con ética, <strong>confidencialidad y compromiso</strong>, convirtiéndonos en aliados estratégicos para el crecimiento financiero de nuestros clientes en Guayaquil y Ecuador.";
+        $default_text = "En AD Cont brindamos asesoría contable y tributaria con enfoque estratégico.\n\nNo solo cumplimos con las obligaciones fiscales, diseñamos planes personalizados que permiten optimizar la carga tributaria dentro del marco legal ecuatoriano.\n\nNuestra especialidad es la <strong>planificación tributaria preventiva</strong>, ayudando a empresarios, profesionales independientes y personas naturales a anticiparse a sus impuestos y tomar decisiones inteligentes.\n\nTrabajamos con ética, confidencialidad y compromiso, convirtiéndonos en aliados estratégicos para el crecimiento financiero de nuestros clientes en Gualaquiza y Ecuador.";
         $body = $about_text ?: $default_text;
         $allowed = [ 'strong' => [], 'em' => [], 'a' => [ 'href' => [], 'target' => [], 'rel' => [] ] ];
         foreach ( array_filter( array_map( 'trim', explode( "\n\n", $body ) ) ) as $p ) {
