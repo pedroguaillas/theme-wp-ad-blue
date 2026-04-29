@@ -1,7 +1,7 @@
 <?php
 $phone    = get_theme_mod( 'contact_phone',    '+593 99 121 4567' );
 $email    = get_theme_mod( 'contact_email',    'info@adcont.com' );
-$location = get_theme_mod( 'contact_location', 'Guayaquil – Ecuador' );
+$location = get_theme_mod( 'contact_location', 'Gualaquiza – Ecuador' );
 $wa       = get_theme_mod( 'contact_wa',       '593991214567' );
 ?>
 
@@ -10,8 +10,8 @@ $wa       = get_theme_mod( 'contact_wa',       '593991214567' );
   <div class="container">
     <div class="footer-inner">
 
-      <!-- Brand -->
-      <div class="footer-brand">
+      <!-- Fila 1: Logo + Texto -->
+      <div class="footer-top">
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="site-logo" aria-label="AD Cont — Inicio">
           <?php if ( has_custom_logo() ) :
             the_custom_logo();
@@ -31,16 +31,18 @@ $wa       = get_theme_mod( 'contact_wa',       '593991214567' );
             </span>
           <?php endif; ?>
         </a>
-        <p class="footer-tagline">Asesoría Contable y Planificación Tributaria</p>
-        <?php if ( $location ) : ?>
-          <p class="footer-location">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="var(--gray-600)" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-            <?php echo esc_html( $location ); ?>
-          </p>
-        <?php endif; ?>
+        <div class="footer-info">
+          <p class="footer-tagline">Asesoría Contable y Planificación Tributaria</p>
+          <?php if ( $location ) : ?>
+            <p class="footer-location">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="rgba(255,255,255,.75)" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              <?php echo esc_html( $location ); ?>
+            </p>
+          <?php endif; ?>
+        </div>
       </div>
 
-      <!-- Contact -->
+      <!-- Fila 2: Teléfono + Email -->
       <div class="footer-contact">
         <?php if ( $phone ) : ?>
           <a href="tel:<?php echo esc_attr( preg_replace( '/[^+\d]/', '', $phone ) ); ?>">
@@ -62,9 +64,7 @@ $wa       = get_theme_mod( 'contact_wa',       '593991214567' );
 
     </div>
 
-    <div class="footer-bottom">
-      <p>&copy; <?php echo esc_html( gmdate( 'Y' ) ); ?> AD Cont — Asesoría Contable y Planificación Tributaria. Todos los derechos reservados.</p>
-    </div>
+
   </div>
 </footer>
 
